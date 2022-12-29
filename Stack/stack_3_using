@@ -1,0 +1,21 @@
+#include<stdio.h>
+#define SIZE 10
+struct stack
+{
+    int stack[SIZE];
+    int top1;
+    int top2;
+};
+typedef struct stack st;
+void push(st *s, int d)
+{
+    if(s->top1<=s->top2)
+    {
+        s->top1++;
+        s->stack[s->top1]=d;
+    }
+}
+void main
+{
+    push(*s,4);
+}
